@@ -1,0 +1,107 @@
+/* Variables */
+:root {
+  --side-width: 86.46%;
+  --purple: #650f80;
+  --dark-purple: #270a8c;
+  --black: #0a0908;
+  --white: #ecf0f1;
+  --pure-white: #ffffff;
+  --semi-white: #fafafa;
+}
+
+/* Reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.856em;
+}
+h2 {
+  font-size: 2.197em;
+}
+
+h3 {
+  font-size: 1.69em;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.769em;
+}
+
+body {
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main Styles */
+.Wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Image {
+  background: url('../img/background.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.Content {
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.Logo__img {
+  width: 160px;
+}
+
+.Logo__caption {
+  margin: 0;
+}
+
+.List {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.List__item {
+  background: #ccc;
+}
+
+.List__img {
+  background: #ccc;
+  width: 100%;
+}

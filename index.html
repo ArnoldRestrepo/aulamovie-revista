@@ -4,27 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Revista - Aulamovie</title>
+    <!-- Fonts: Montserrat+Pontano-Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Pontano+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="Wrapper">
       <section class="Image"></section>
-      <section>
+      <section class="Content">
         <header class="Header">
-          <img src="#" alt="Logo" class="Logo" />
+          <div class="Logo">
+            <img src="img/logo-aulamovie.png" alt="Logo" class="Logo__img" />
+            <p class="Logo__caption">Un proyecto <b>Protoplast</b></p>
+          </div>
           <h1 class="Title">Revista Cuatrimestral</h1>
         </header>
         <main class="Main">
-          <h2 class="Subtitle">Indices</h2>
+          <h3 class="Subtitle">Indices</h3>
           <ul class="List">
             <li class="List__item">
-              <a href="#" class="List__link">
-                <img src="#" alt="" class="List__img" />
+              <a href="./revista/primera-edicion.pdf" class="List__link">
+                <img
+                  src="img/encuentro-interuniversitario-SNN.jpg"
+                  alt="Primera Edicion"
+                  class="List__img"
+                />
                 <p class="Link__text">Primera Versión</p>
               </a>
             </li>
           </ul>
         </main>
+        <!-- Footer  -->
+        <footer class="Footer">
+          <article class="Footer__item">
+            <img
+              src="img/logo-aulamovie.png"
+              alt="Logo Aulamovie"
+              class="Logo__img"
+            />
+            <p class="Logo__caption">Un proyecto <b>Protoplast</b></p>
+          </article>
+          <article class="Footer__item">
+            <h5 class="Footer__title">Acerca de Talamoo</h5>
+            <p class="Footer__copy">
+              &copy; Todos los derechos reservados Talamoo 2020.
+            </p>
+          </article>
+          <article class="Footer__item">
+            <h5 class="Footer__title">Síguenos:</h5>
+            <div class="Footer__social">
+              <a
+                href="https://www.facebook.com/Talamoo-225087785420164/"
+                target="_blank"
+                class="Footer__social__link"
+              >
+                <i class="fa fa-facebook Footer__social__icon"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/talamoo_oficial/"
+                target="_blank"
+                class="Footer__social__link"
+              >
+                <i class="fa fa-instagram Footer__social__icon"></i>
+              </a>
+              <a href="mailto:info@talamoo.com" class="Footer__social__link">
+                <i class="fa fa-envelope Footer__social__icon"></i>
+              </a>
+            </div>
+          </article>
+          <article class="Footer__item">
+            <h5 class="Footer__title">Contáctanos:</h5>
+            <div class="Footer__links">
+              <a href="mailto:info@talamoo.com" class="Footer__email"
+                >info@talamoo.com
+              </a>
+              <a
+                href="https://wa.link/ca5x8s"
+                target="_blank"
+                class="Footer__contact"
+                >Informes Aquí <i class="fa fa-whatsapp"></i
+              ></a>
+            </div>
+          </article>
+        </footer>
       </section>
     </div>
   </body>
