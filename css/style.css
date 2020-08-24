@@ -1,12 +1,12 @@
 /* Variables */
 :root {
   --side-width: 86.46%;
-  --purple: #650f80;
-  --dark-purple: #270a8c;
-  --black: #0a0908;
+  --orange: #e13125;
+  --green: #089c98;
+  --black: #120302;
   --white: #ecf0f1;
   --pure-white: #ffffff;
-  --semi-white: #fafafa;
+  --semi-white: #fef5ef;
 }
 
 /* Reset */
@@ -63,6 +63,11 @@ img {
   height: auto;
 }
 
+a {
+  color: var(--green);
+  text-decoration: none;
+}
+
 /* Main Styles */
 .Wrapper {
   max-width: 1920px;
@@ -71,7 +76,7 @@ img {
   margin: 0 auto;
   overflow-x: hidden;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: minmax(200px, 500px) 1fr;
 }
 
 .Image {
@@ -80,7 +85,7 @@ img {
 }
 
 .Main {
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
 }
 
 .Content {
@@ -101,31 +106,41 @@ img {
   display: grid;
   margin: 0;
   padding: 0;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   grid-gap: 2rem;
 }
 
 .List__item {
-  background: #ccc;
-  padding: 5px;
+  background: var(--semi-white);
+  padding: 0.5rem;
+  box-shadow: 2px 3px 12px -3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 .List__img {
-  background: #ccc;
   width: 100%;
 }
 
 .Link__text {
   color: var(--dark-purple);
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.Footer__email,
+.Footer__contact {
+  display: block;
 }
 
 .Footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   width: 100%;
   grid-gap: 2rem;
-  position: fixed;
-  bottom: 0;
+}
+
+.Footer__title {
+  margin: 0 0 1rem 0;
 }
 
 @media screen and (max-width: 968px) {
